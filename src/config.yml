@@ -1,0 +1,46 @@
+# Bot-Token -> Token de seu Bot
+# Observação: O plugin não irá atrapalhar o funcionamento do Bot
+Bot-Token: "bot-token"
+
+# Guild-ID -> Coloque o ID de seu servidor no Discord
+Guild-ID: "guild-id"
+
+# Use-MySQL -> O plugin utilizará o banco de dados MySQL
+# Observação: Se a opção for 'false' será usado arquivos internos e BungeeCord será desabilitado
+Use-MySQL: false
+MySQL:
+  Host: 'localhost'
+  User: 'root'
+  Port: 3306
+  Password: ''
+  Database: 'database'
+
+# Join-Warn -> Sempre que um jogador não vinculado entrar neste servidor, será notificado que a sua conta não foi vinculada
+# Recomendação: true
+Join-Warn: true
+
+# BungeeCord -> O plugin desativará funções que serão substituídos pelo plugin BungeeCord
+# Recomendação: true (Caso não utilize BungeeCord mantenha 'false')
+BungeeCord: false
+
+# Sync-Chat -> As mensagens dos jogadores neste servidor serão enviadas para um canal no discord
+# Recomendação: true (Se necessário, crie canais separados por servidores)
+Sync-Chat: false
+Chat:
+  # Channel-ID -> ID do Canal
+  Channel-ID: ""
+  Format: "[SKYWARS] **%hours%** %player%: %message%"
+
+# Sobre Commands:
+# (label) -> O nome do comando. Caso o label for "123" você poderá usar /123 para usa-lo
+# (aliases) -> Outros metodos que poderão ser usados para usar-lo
+# (permission) -> Permissão necessária para usa-lo
+# As mensagens de comandos estão no arquivo mensagens.yml!
+Commands:
+  synchronize:
+    label: "vincular"
+    permission: ""
+    aliases:
+      - "synchronize"
+      - "vincule"
+      - "dsync"

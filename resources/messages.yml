@@ -1,0 +1,11 @@
+Join-Warn:
+  - ""
+  - "&a&lSEU SERVIDOR"
+  - "&7Seu &9Discord &7não está vinculado com sua &aConta Minecraft&7!"
+  - "&7Use: &a/vincular %nickname% &7em nosso &aChat de Vinculação&7!"
+  - ""
+  - "&9https://discord.gg/servidor"
+  - ""
+Commands:
+  Synchronize:
+    Use:

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DiscordVinculator">
+    <output-path>$PROJECT_DIR$/../../../../../Servidores/Zyle Network/Lobbys/SkyWars/plugins</output-path>
+    <root id="archive" name="DiscordVinculator.jar">
+      <element id="module-output" name="DiscordVinculator" />
+    </root>
+  </artifact>
+</component>
