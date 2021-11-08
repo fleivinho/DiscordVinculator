@@ -233,7 +233,11 @@ public class MySQL implements LoptySQLConnection{
 			e.printStackTrace();
 		}
 	}
-	
+	public void prepare() {
+		this.tablesNames.add(table);
+		this.tableStatements.add("CREATE TABLE IF NOT EXISTS `"+table+"_users`" + " ( `uuid` TEXT NOT NULL, `discord_id` TEXT NOT NULL);");
+	}
+
 	private void keepAlive() {
 		new BukkitRunnable() {
 			
@@ -315,6 +319,5 @@ public class MySQL implements LoptySQLConnection{
 			e.printStackTrace();
 		}
 	}
-
 
 }

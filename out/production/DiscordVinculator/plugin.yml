@@ -1,4 +1,6 @@
 name: DiscordVinculator
-version: 1.0.0
-main: com.github.wypixel.DiscordVinculator.spigot.Main
+version: BETA-1.0.0
+author: "Wypixel"
+website: https://github.com/wypixel
+main: com.github.wypixel.DiscordVinculator.spigot.DiscordVinculator
 depend: [JDASpigot]

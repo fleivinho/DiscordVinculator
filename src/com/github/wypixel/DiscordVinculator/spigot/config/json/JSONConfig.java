@@ -1,5 +1,6 @@
 package com.github.wypixel.DiscordVinculator.spigot.config.json;
 
+import com.github.wypixel.DiscordVinculator.spigot.DiscordVinculator;
 import com.github.wypixel.DiscordVinculator.spigot.plugin.WPlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Entity;
@@ -19,7 +20,7 @@ import java.util.Map.Entry;
 public class JSONConfig implements Serializable {
     
     // The parsed objects
-	private WPlugin plugin;
+	private WPlugin plugin = DiscordVinculator.getPlugin();
 	private String name;
 	private File file;
 	private File oldFile;
@@ -58,6 +59,7 @@ public class JSONConfig implements Serializable {
                 Set<Object> keys = parsed.keySet();
                 for(Object key : keys) {
                     parsedObjects.put((String) key, parsed.get(key));
+                    DiscordVinculator.getPlugin().getLogger().info((String)key + " | " + parsed.get(key));
                 }
             } catch (ParseException | IOException ex) {
 

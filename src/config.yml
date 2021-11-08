@@ -2,8 +2,15 @@
 # Observação: O plugin não irá atrapalhar o funcionamento do Bot
 Bot-Token: "bot-token"
 
+# Bot-Prefix -> Prefixo que o seu Bot utiliza
+Bot-Prefix: "/"
+
 # Guild-ID -> Coloque o ID de seu servidor no Discord
 Guild-ID: "guild-id"
+
+# BungeeCord -> O plugin desativará funções que serão substituídos pelo plugin BungeeCord
+# Recomendação: true (Caso não utilize BungeeCord mantenha 'false')
+BungeeCord: false
 
 # Use-MySQL -> O plugin utilizará o banco de dados MySQL
 # Observação: Se a opção for 'false' será usado arquivos internos e BungeeCord será desabilitado
@@ -19,28 +26,20 @@ MySQL:
 # Recomendação: true
 Join-Warn: true
 
-# BungeeCord -> O plugin desativará funções que serão substituídos pelo plugin BungeeCord
-# Recomendação: true (Caso não utilize BungeeCord mantenha 'false')
-BungeeCord: false
+Options:
+  change_names: true
+  Format:
 
 # Sync-Chat -> As mensagens dos jogadores neste servidor serão enviadas para um canal no discord
 # Recomendação: true (Se necessário, crie canais separados por servidores)
 Sync-Chat: false
+# Prefixos disponíveis:
+# %date% -> Data (01/01/2001)
+# %hours% -> Horas (00:00:00)
+# %player% -> Nickname (wypixel)
+# %message% -> Mensagem ("Olá, bom dia!")
 Chat:
   # Channel-ID -> ID do Canal
-  Channel-ID: ""
-  Format: "[SKYWARS] **%hours%** %player%: %message%"
-
-# Sobre Commands:
-# (label) -> O nome do comando. Caso o label for "123" você poderá usar /123 para usa-lo
-# (aliases) -> Outros metodos que poderão ser usados para usar-lo
-# (permission) -> Permissão necessária para usa-lo
-# As mensagens de comandos estão no arquivo mensagens.yml!
-Commands:
-  synchronize:
-    label: "vincular"
-    permission: ""
-    aliases:
-      - "synchronize"
-      - "vincule"
-      - "dsync"
+  channel-ID: ""
+  # Format -> Formato de como sairá a mensagem.
+  format: "[SKYWARS] **%hours%** %player%: %message%"

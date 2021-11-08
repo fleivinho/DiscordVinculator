@@ -1,0 +1,26 @@
+# onRoleSet -> Opções de quando um jogador ter o seu cargo definido.
+onRoleSet:
+  execute: "pex user %player% group set %role%"
+
+# Sobre Roles:
+#
+# Estes cargos serão setados dentro e fora do Minecraft.
+#
+# (Exemplo de uso)
+# Roles:
+#  VIP: (Forma de reconhecer o cargo)
+#    ID: "800830344092713011" (ID do cargo)
+#    level: 20 (Quanto menor, mais inferior é)
+Roles:
+  Admin:
+    ID: ""
+    level: 10
+  Mod:
+    ID: ""
+    level: 5
+  VIP:
+    ID: ""
+    level: 1
+  Padrao:
+    ID: ""
+    level:
