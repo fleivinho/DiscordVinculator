@@ -21,7 +21,7 @@ public class PlayerJoinListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
-        player.sendMessage("§a[" + DiscordVinculator.getPlugin().getName() + "] Developer: https://github.com/wypixel | Version: " + DiscordVinculator.getPlugin().getDescription().getVersion());
+        player.sendMessage("§a[" + DiscordVinculator.getPlugin().getName() + "] Developer: https://github.com/fleivinho | Version: " + DiscordVinculator.getPlugin().getDescription().getVersion());
         PlayerConfig playerConfig = new PlayerConfig(player.getUniqueId());
             if(!playerConfig.exists()) {
                     if (DiscordVinculator.getPlugin().getConfig().getBoolean("Join-Warn")) {
