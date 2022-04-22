@@ -1,5 +1,5 @@
 # DiscordVinculator
 Um simples plugin de vinculação utilizando JDA.
 
-## ⚠️Desatualizado
-Este projeto é antigo e desatualizado.
+## ⚠️Descontinuado
+Este projeto é antigo, desatualizado e não será continuado.
